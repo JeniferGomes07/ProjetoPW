@@ -1,25 +1,36 @@
-/* From Uiverse.io by ammarsaa */ .form {
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+.form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
+    width: 500px;
+    height: 500px;
+    margin-left: 500px;
+    margin-top: 80px;
     padding: 20px;
     border-radius: 20px;
     position: relative;
     background-color: #1a1a1a;
     color: #fff;
     border: 1px solid #333;
+    margin-left: 50x;
   }
   
   .title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
-    letter-spacing: -1px;
+    letter-spacing: 3px;
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
+    color: #b40606;
+    font-family: "DM Serif Display";
+    margin-left: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .title::before {
@@ -33,16 +44,7 @@
     animation: pulse 1s linear infinite;
   }
   
-  .title::before,
-  .title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #00bfff;
-  }
+ 
   
   .message, 
   .signin {
@@ -75,21 +77,24 @@
   .form label .input {
     background-color: #333;
     color: #fff;
-    width: 100%;
-    padding: 20px 05px 05px 10px;
+    width: 450px;
+    padding: 30px 05px 05px 10px;
     outline: 0;
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
+    margin-left: 20px;
   }
+
   
   .form label .input + span {
     color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    left: 10px;
+    left: 27px;
     top: 0px;
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
+   
   }
   
   .form label .input:placeholder-shown + span {
@@ -99,16 +104,21 @@
   
   .form label .input:focus + span,
   .form label .input:valid + span {
-    color: #00bfff;
+    color: #b40606;
     top: 0px;
-    font-size: 0.7em;
+    font-size: 18px;
     font-weight: 600;
   }
   
   .input {
     font-size: medium;
   }
-  
+  #input2 {
+    width: 450px;
+    height: 150px;
+  }
+ 
+
   .submit {
     border: none;
     outline: none;
@@ -116,12 +126,14 @@
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
+    width: 300px;
     transform: .3s ease;
-    background-color: #00bfff;
+    background-color: #820808;
+    margin-left: 110px;
   }
   
   .submit:hover {
-    background-color: #00bfff96;
+    background-color: #8a2a2796;
   }
   
   @keyframes pulse {
